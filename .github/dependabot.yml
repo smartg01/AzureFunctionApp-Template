@@ -1,0 +1,17 @@
+
+version: 2 # most up to date dependabot version
+updates:
+  - package-ecosystem: "terraform" 
+    directory: "/terraform" 
+    schedule:
+      interval: "daily" # Options: "daily", "weekly", "monthly"
+
+  - package-ecosystem: "pip"
+    directory: "/functionApp1"  # Location of your requirements.txt
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "pip"
+    directory: "/functionApp2"  # Location of your requirements.txt
+    schedule:
+      interval: "daily"
